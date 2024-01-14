@@ -67,6 +67,9 @@ h1 {
   background: var(--violet-color);
   border-radius: 20px;
 }
+.styled-btn:active{
+  color:black
+}
 
 /* Splash Loader Effect */
 .splash-loader {
