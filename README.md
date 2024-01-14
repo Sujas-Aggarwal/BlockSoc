@@ -1,1 +1,1 @@
-Made with Love By [Sujas Aggarwal](https://github.com/Sujas-Aggarwal)
+Made with 💖 By [Sujas Aggarwal](https://github.com/Sujas-Aggarwal)
