@@ -23,7 +23,6 @@ function Events({ embeded = false }) {
               <Event
                 key={event.name}
                 isReversed={rev}
-                Image={event.img}
                 EventName={event.name}
                 Description={event.description}
               />
