@@ -3,21 +3,37 @@ import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 import "./Header.css";
 function Header() {
+  useEffect(() => {
+    const menuItems = document.querySelectorAll(
+      ".header .wrapper .right-div .menu li"
+    );
+    menuItems.forEach((item) => {
+      item.addEventListener("click", hideMenu);
+    });
+  }, []);
   function showMenu() {
     const menu = document.querySelector(".header .wrapper .right-div .menu");
-    const menuBtn= document.querySelector(".header .wrapper .right-div .burger-menu");
-    const closeBtn = document.querySelector(".header .wrapper .right-div .close-btn");
-    menuBtn.style.display="none"
-    closeBtn.style.display="flex"
+    const menuBtn = document.querySelector(
+      ".header .wrapper .right-div .burger-menu"
+    );
+    const closeBtn = document.querySelector(
+      ".header .wrapper .right-div .close-btn"
+    );
+    menuBtn.style.display = "none";
+    closeBtn.style.display = "flex";
     menu.style.right = "0";
   }
   function hideMenu() {
     const menu = document.querySelector(".header .wrapper .right-div .menu");
-    const menuBtn= document.querySelector(".header .wrapper .right-div .burger-menu");
-    const closeBtn = document.querySelector(".header .wrapper .right-div .close-btn");
+    const menuBtn = document.querySelector(
+      ".header .wrapper .right-div .burger-menu"
+    );
+    const closeBtn = document.querySelector(
+      ".header .wrapper .right-div .close-btn"
+    );
     menu.style.right = "-100%";
-    menuBtn.style.display="flex"
-    closeBtn.style.display="none"
+    menuBtn.style.display = "flex";
+    closeBtn.style.display = "none";
   }
 
   return (
@@ -25,7 +41,9 @@ function Header() {
       <div className="wrapper">
         <div className="left-div">
           <img src={logo} className="logo-img" />
-          <h1 className="logo-text"><Link to={"/"}>BlockSoc</Link></h1>
+          <h1 className="logo-text">
+            <Link to={"/"}>BlockSoc</Link>
+          </h1>
         </div>
         <div className="right-div">
           <svg
@@ -56,7 +74,9 @@ function Header() {
             <li>
               <Link>Projects</Link>
             </li>
-            <li><a href="#events">Events</a></li>
+            <li>
+              <a href="#events">Events</a>
+            </li>
             <li>Blogs</li>
             <li>
               <Link>Resources</Link>
