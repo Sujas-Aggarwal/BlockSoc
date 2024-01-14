@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin: 10vh 0;
 }
 .home .get-started {
   min-height: 90vh;
