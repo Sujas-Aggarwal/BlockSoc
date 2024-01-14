@@ -21,9 +21,9 @@ function Events({ embeded = false }) {
             rev = !rev;
             return (
               <Event
+              Image={event.img}
                 key={event.name}
                 isReversed={rev}
-                Image={event.img}
                 EventName={event.name}
                 Description={event.description}
               />
