@@ -70,6 +70,11 @@ h1 {
 .styled-btn:active{
   color:black
 }
+@media screen and (max-width:400px) {
+  .styled-btn{
+    font-size: 14px;
+  }
+}
 
 /* Splash Loader Effect */
 .splash-loader {
