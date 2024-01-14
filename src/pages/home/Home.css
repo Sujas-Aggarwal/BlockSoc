@@ -1,0 +1,61 @@
+.home {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.home .get-started {
+  min-height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.home .get-started .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  height: 80%;
+}
+.home .get-started .wrapper .get-started-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap-reverse;
+}
+.home .get-started .wrapper .get-started-info .get-started-text {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  font-weight: 300;
+}
+.home .get-started .wrapper .get-started-info .get-started-text mark {
+  font-weight: 600;
+  color: white;
+}
+.home .get-started .wrapper .get-started-info .get-started-svg {
+  width: 35vw;
+}
+
+.home .page-two .wrapper .get-started-info .get-started-text {
+  font-size: 20px;
+  max-width: 35ch;
+  text-transform: capitalize;
+  font-weight: 300;
+  font-size: 20px;
+  text-align: left;
+}
+.home .page-two .wrapper .get-started-info .get-started-text h1 {
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.home .page-two .wrapper .get-started-info .get-started-text h2 {
+  text-transform: uppercase;
+  font-size: 22px;
+}

@@ -1,0 +1,24 @@
+.events{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5vh 0;
+}
+.events .wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+.events .wrapper h1{
+    font-size: 24px;
+}
+.events .wrapper .events-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    width: 100%;
+    flex-direction: column;
+}

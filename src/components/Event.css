@@ -1,0 +1,49 @@
+.event{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.event .wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+#reverse{
+    flex-direction: row-reverse;
+}
+.event .wrapper .left-div{
+    width: 300px;
+    overflow: hidden;
+}
+.event .wrapper .left-div .img{
+    width: 300px;
+    height: 300px;
+    background: white;
+    overflow: hidden;
+    border-radius: 10px;
+
+}
+.event .wrapper .left-div .img img{
+    width: 100%;
+    min-height: 100%;
+}
+.event .wrapper .left-div .img-text{
+    background: var(--violet-color);
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0px;
+    border-radius: 10px;
+    color: black;
+}
+.event .wrapper .right-div{
+    width: 350px;
+    height: 350px;
+    background: var(--violet-color);
+    border-radius: 10px;
+    padding: 10px;
+    color: black;
+    overflow: hidden;
+}
